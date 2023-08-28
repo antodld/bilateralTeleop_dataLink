@@ -24,7 +24,7 @@ class motion
     {
         name_ = n;
         type_ = t;
-        for (int partInt = Limbs::Head ; partInt != Limbs::RightShoulder ; partInt++) {
+        for (int partInt = Limbs::Head ; partInt != Limbs::RightArm ; partInt++) {
             Limbs part = static_cast<Limbs>(partInt);
             motions_[part] = Eigen::Vector6d::Zero();
         }

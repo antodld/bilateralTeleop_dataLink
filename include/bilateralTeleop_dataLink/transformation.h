@@ -24,7 +24,7 @@ class transformation
     {
         name_ = n;
         type_ = t;
-        for (int partInt = Limbs::Head ; partInt != Limbs::RightShoulder ; partInt++) {
+        for (int partInt = Limbs::Head ; partInt != Limbs::RightArm ; partInt++) {
             Limbs part = static_cast<Limbs>(partInt);
             transformations_E_[part] = Eigen::Matrix3d::Identity();
             transformations_T_[part] = Eigen::Vector3d::Zero();

@@ -1,1 +1,1 @@
-UDP socket connection link for bilateral teleopearion
+UDP socket connection link for bilateral teleoperation
