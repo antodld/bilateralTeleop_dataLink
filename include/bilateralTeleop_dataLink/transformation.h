@@ -45,6 +45,10 @@ class transformation
     {
         return name_;
     }
+    void name(Name name)
+    {
+        name_ = name;
+    }
     bilateralTeleop::Type type()
     {
         return type_;

@@ -39,13 +39,17 @@ class motion
         return sva::MotionVecd(motions_[part]);
     }
 
-    bilateralTeleop::Name name()
+    Name name()
     {
         return name_;
     }
-    bilateralTeleop::Type type()
+    void name(Name name)
     {
-        return type_;
+        name_ = name;
+    }
+    void type(Type t)
+    {
+        type_ = t;
     }
     private:
 
