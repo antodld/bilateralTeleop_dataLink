@@ -26,8 +26,25 @@ inline Limbs str2Limb(const std::string & name)
     if(name == "Pelvis"){ return Limbs::Pelvis;}
     if(name == "Head"){ return Limbs::Head;}
 
-    std::cout << "Link not recognized : Available links :\n" << "LeftHand\nRightHand\nLeftArm\nRightArm\nLeftForearm\nRightForearm\nPelvis\nHead" << std::endl;
+    std::cout << "[str2Limb] Link "<< name <<" not recognized : Available links :\n" << "LeftHand\nRightHand\nLeftArm\nRightArm\nLeftForearm\nRightForearm\nPelvis\nHead" << std::endl;
     return Limbs::LeftHand;
+
+}
+
+inline std::string limb2Str(const Limbs & limb)
+{
+       
+    if(limb == LeftHand){ return "LeftHand";}
+    if(limb == RightHand ){ return "RightHand";}
+    if(limb == LeftArm){ return "LeftArm";}
+    if(limb == RightArm){ return "RightArm";}
+    if(limb == RightForearm){ return "RightForearm";}
+    if(limb == LeftForearm){ return "LeftForearm";}
+    if(limb == Pelvis){ return "Pelvis";}
+    if(limb == Head){ return "Head";}
+
+    std::cout << "[limb2Str] Link "<< limb <<" not recognized : Available links :\n" << "LeftHand\nRightHand\nLeftArm\nRightArm\nLeftForearm\nRightForearm\nPelvis\nHead" << std::endl;
+    return "LeftHand";
 
 }
 
